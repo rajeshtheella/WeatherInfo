@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_shadow_radius"
+        android:clipChildren="true"
+        android:clipToPadding="true">
+
+        <LinearLayout
+            android:id="@+id/user_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:clipChildren="true"
+            android:clipToPadding="true"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+                    <TextView
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_15sp" />
+                    <TextView
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_15sp" />
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:paddingStart="6dp"
+                        android:paddingTop="2dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimen_15sp" />
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_700">
+
+        <LinearLayout
+            android:id="@+id/header_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include layout="@layout/header_for_all" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="-8dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/header_separator" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/parent_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/header_ll"
+            android:padding="@dimen/dimen_10dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+                <TextView
+                    android:id="@+id/temp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="2dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp" />
+                <TextView
+                    android:id="@+id/WeatherType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="2dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp" />
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="2dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_15sp" />
+            <TextView
+                android:id="@+id/wind_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:paddingStart="6dp"
+                android:paddingTop="2dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_15sp" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

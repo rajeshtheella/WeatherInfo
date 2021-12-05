@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:ignore="UnusedNavigation"
+    app:startDestination="@id/onBoardFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.rajesh.weatherinfo.ui.fragments.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment">
+
+        <action
+            android:id="@+id/action_loginFragment_to_userListFragment"
+            app:destination="@id/userListFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/loginFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.rajesh.weatherinfo.ui.fragments.UserListFragment"
+        android:label="UserListFragment"
+        tools:layout="@layout/user_list_fragment">
+        <action
+            android:id="@+id/action_userListFragment_to_weatherInfo"
+            app:destination="@id/weatherInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherInfo"
+        android:name="com.rajesh.weatherinfo.ui.fragments.WeatherInfo"
+        android:label="WeatherInfo"
+        tools:layout="@layout/weather_info_fragment">
+        <action
+            android:id="@+id/action_weatherInfo_to_userListFragment"
+            app:destination="@id/userListFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/weatherInfo"/>
+        <action
+            android:id="@+id/action_weatherInfo_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/loginFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.rajesh.weatherinfo.ui.fragments.OnBoardFragment"
+        android:label="OnBoardFragment"
+        tools:layout="@layout/on_board_fragment">
+        <action
+            android:id="@+id/action_onBoardFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/onBoardFragment"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeatherInfo</string>
+    <string name="login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="login_in">Login</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="welcome">Welcome</string>
+</resources>
